@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
 <link rel= "stylesheet" href="glow.css">
+<link rel="stylesheet/scss" type="text/css" href="glitch.css">
 <style>
 body {
   background: url('neon8.jpg');
@@ -21,19 +22,11 @@ body {
 a {
   transition: all 0.5s ease;
 }
-.rotating-slider ul.slides li { color: #fff }
+.rotating-slider ul.slides li { 
+  color: #fff;
+  background-color: transparent;
+}
 
-.rotating-slider ul.slides li:nth-of-type(1) { background: #3498db; }
-
-.rotating-slider ul.slides li:nth-of-type(2) { background: url('http://static.pexels.com/wp-content/uploads/2014/05/car-oldtimer-snow-342-825x550.jpg'); }
-
-.rotating-slider ul.slides li:nth-of-type(3) { background: #e74c3c; }
-
-.rotating-slider ul.slides li:nth-of-type(4) { background: url('http://static.pexels.com/wp-content/uploads/2014/06/analog-camera-old-olympus-om-10-1528-825x550.jpg'); }
-
-.rotating-slider ul.slides li:nth-of-type(5) { background: #f1c40f; }
-
-.rotating-slider ul.slides li:nth-of-type(6) { background: url(http://static.pexels.com/wp-content/uploads/2014/06/bridge-city-night-645-827x550.jpg); }
 
 .rotating-slider ul.slides li .inner {
   box-sizing: border-box;
@@ -102,6 +95,21 @@ a {
     margin-right: 10px;
     transition: 0.5s ease;
 }
+
+.name_events{
+  
+  color: #ff1177;
+  transition: 0.5s ease;
+
+}
+.inner img{
+  border:4px solid transparent;
+  transition: 0.5s ease;
+}
+.inner{
+  text-align: center;
+}  
+
 .contact-name {
   font-size: 1.5em;
   color: wheat;
@@ -159,35 +167,56 @@ a {
   <ul class="slides">
     <li>
       <div class="inner"  value='0' onclick=click_event(0)>
-        <h2></h2>
-        <p></p>
+        
+        <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          </div>
+           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          </div>
+           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          </div>
+           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          </div>
+           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
+          </div>
+        </div> 
+        <h2 class="name_events">Event 1</h2 >
+        
       </div>
     </li>
    
     <li>
       <div class="inner"  value='1'onclick=click_event(1)>
-        <h2></h2>
-        <p></p>
+         
+        <img src="neon2.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
+        <h2 class="name_events">Event 2</h2 >
+        
       </div>
     </li>
    
     <li>
       <div class="inner"  value='2'onclick=click_event(2)>
-        <h2></h2>
-        <p></p>
+         
+        <img src="neon3.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
+        <h2 class="name_events">Event 3</h2 >
+        
       </div>
     </li>
     <li>
       <div class="inner"  value="3"onclick=click_event(3)>
-        <h2></h2>
-        <p></p>
+         
+        <img src="neon4.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
+        <h2 class="name_events">Event 4</h2 >
+        
       </div>
     </li>
 
     <li>
       <div class="inner"  value='4'onclick=click_event(4)>
-        <h2></h2>
-        <p></p>
+        
+        <img src="neon5.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
+        <h2 class="name_events">Event 5</h2 >
+        
       </div>
     </li>
   </ul>
