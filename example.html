@@ -42,7 +42,8 @@ a {
   opacity: 0; 
   overflow: auto;
   position: fixed;
-  border: solid black 2px;
+  border: solid white 2px;
+  border-radius: 5px;
   padding: 10px 10px 10px 10px;
   color: wheat;
 }
@@ -51,6 +52,18 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+#event-name {
+  font-family: Pacifico;
+  color: #ffdd1b;
+  margin-top: 1vh;
+  padding-bottom: 2vh;
+  font-size: 3em;
+}
+.events-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .nav {
     
@@ -61,7 +74,7 @@ a {
 
 }
 .nav >div {
-    margin-top: 0.001vh;
+    margin-top: 1vh;
 }
 .logo-final {
     height: 14vh;
@@ -82,6 +95,7 @@ a {
     margin-right: 10px;
     transition: 0.5s ease;
 }
+
 .name_events{
   
   color: #ff1177;
@@ -94,7 +108,20 @@ a {
 }
 .inner{
   text-align: center;
-  
+}  
+
+.contact-name {
+  font-size: 1.5em;
+  color: wheat;
+}
+.contact-1, .contact-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-number {
+  font-size: 1.5em;
+  color: wheat;
 }
 </style>
 </head>
@@ -109,7 +136,7 @@ a {
     Prof Shows
   </div>
   <div class="contact-us">
-          <a href="#">Contact Us</a>
+          <a href="#" onclick="openContacts()">Contact Us</a>
       </div>
 </div>
 <div style="display: flex; justify-content: center">
@@ -117,10 +144,24 @@ a {
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
     <div class="events-wrapper">
     <div id="event-name"></div>
-    <div id="event-desc"></div>
+    <div class="event-desc">
+      <div id="event-pic"></div>
+      <div id="event-info"></div>
+    </div>
     </div>  
   </div>
 </div>
+<div class= "contacts" style="display: flex; flex-direction: column; justify-content: center; opacity: 0; height: 70%; width: 70%;">
+  <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
+  <div class="contact-1">
+<div class="contact-name">Priyanshu Shukla</div>
+<div class="contact-number">9876543210</div>
+</div>
+  <div class="contact-2">
+    <div class="contact-name">Ishan Garg</div>
+    <div class="contact-number">0123456789</div>
+    </div>
+  </div>
 
 <div class="rotating-slider" style="opacity: 1; transition: all 0.5s ease-in;">
   <ul class="slides">
