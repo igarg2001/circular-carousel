@@ -6,8 +6,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>jQuery Rotating Slider Plugin Demo</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
+<link rel= "stylesheet" href="glow.css">
 <style>
 body {
   background: #333;
@@ -15,7 +17,9 @@ body {
   font-weight: 300;
   overflow: hidden;
 }
-
+a {
+  transition: all 0.5s ease;
+}
 .rotating-slider ul.slides li { color: #fff }
 
 .rotating-slider ul.slides li:nth-of-type(1) { background: #3498db; }
@@ -53,11 +57,38 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav >div {
+    margin-top: 10px;
+}
+.logo-final {
+    height: 14vh;
+    width: 14vw;
+    margin: 10px;
+}
+.ps {
+  font-family: Monoton;
+  font-size: 3.5em;
+  margin-top: 10px;
+  color: #ff1177;
+  text-align: center;
+  margin-right: 50px;
+}
+.contact-us a {
+    font-family: Audiowide;
+    font-size: 2em;
+    color: #ff9900;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.5s ease;
+}
 </style>
 </head>
 <body translate="no">
-
-<h1 style="text-align: center; color: #95a5a6; margin-top:150px">jQuery Rotating Slider Plugin Demo</h1>
 <div style="display: flex; justify-content: center">
   <div class="events" style="transition: all 0.5s ease-in;">
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
@@ -67,7 +98,17 @@ body {
     </div>  
   </div>
 </div>
-  
+<div class="nav">
+  <div class="logo">
+      <img class="logo-final" src="imgres/logo_final.png">
+  </div>
+  <div class="ps">
+    Prof Shows
+  </div>
+  <div class="contact-us">
+          <a href="#">Contact Us</a>
+      </div>
+</div>
 <div class="rotating-slider" style="opacity: 1; transition: all 0.5s ease-in;">
   <ul class="slides">
     <li>
