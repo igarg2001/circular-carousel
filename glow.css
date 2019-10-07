@@ -2,6 +2,14 @@
     animation: neon-1 1.5s ease-in-out infinite alternate; 
     color: #ffffff;
 }
+.name_events:hover{
+	animation: neon-1 1.5s ease-in-out infinite alternate; 
+    color: #031838;
+}
+.inner img:hover{
+	animation: neon-1 2s ease-in-out infinite alternate; 
+	border:6px solid #031838;
+}
 @keyframes neon-1 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
