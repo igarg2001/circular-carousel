@@ -38,6 +38,10 @@
 }
 .rotating-slider ul.direction-controls li button:hover{
     background: rgba(0,0,0,0.6);
+    border: none;
+}
+.rotating-slider ul.direction-controls li button:active{
+    border: none;
 }
 .rotating-slider ul.slides{
     border-radius: 50%;
