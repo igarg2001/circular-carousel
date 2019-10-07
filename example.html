@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="rotating-slider.css">
 <style>
 body {
-  background: #333;
+  background: url('neon6.jpg');
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
   overflow: hidden;
+  background-size: cover;
 }
 
 .rotating-slider ul.slides li { color: #fff }
@@ -35,6 +36,7 @@ body {
   padding: 2em;
   height: 100%;
   width: 100%;
+
 }
 .events{
   width: 70%;
@@ -57,7 +59,11 @@ body {
 </head>
 <body translate="no">
 
-<h1 style="text-align: center; color: #95a5a6; margin-top:150px">jQuery Rotating Slider Plugin Demo</h1>
+<h1 style="text-align: center; color: #95a5a6; margin-top:150px">
+  
+
+</h1>
+
 <div style="display: flex; justify-content: center">
   <div class="events" style="transition: all 0.5s ease-in;">
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
@@ -72,28 +78,35 @@ body {
   <ul class="slides">
     <li>
       <div class="inner"  value='0' onclick=click_event(0)>
-        <h2>jQuery Rotating Slider</h2>
-        <p>A fancy rotator plugin.</p>
+        <h2></h2>
+        <p></p>
       </div>
     </li>
    
     <li>
       <div class="inner"  value='1'onclick=click_event(1)>
-        <h2>Slide 2</h2>
-        <p>This is slide 2</p>
+        <h2></h2>
+        <p></p>
       </div>
     </li>
    
     <li>
       <div class="inner"  value='2'onclick=click_event(2)>
-        <h2>Slide 3</h2>
-        <p>This is slide 3</p>
+        <h2></h2>
+        <p></p>
       </div>
     </li>
     <li>
       <div class="inner"  value="3"onclick=click_event(3)>
-        <h2>Slide 4</h2>
-        <p>This is slide 4</p>
+        <h2></h2>
+        <p></p>
+      </div>
+    </li>
+
+    <li>
+      <div class="inner"  value='4'onclick=click_event(4)>
+        <h2></h2>
+        <p></p>
       </div>
     </li>
   </ul>

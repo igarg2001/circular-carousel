@@ -10,7 +10,7 @@
                 
                 this.settings = $.extend({
                     autoRotate: true,
-                    autoRotateInterval: 6000,
+                    autoRotateInterval: 4000,
                     draggable: true,
                     directionControls: true,
                     directionLeftText: '&lsaquo;',
@@ -199,7 +199,7 @@
                     this.rotateCounterClockwise();
                 }.bind(this), this.settings.autoRotateInterval);
             },
-            stopAutoRotate: function(){
+           stopAutoRotate: function(){
                 if(this.autoRotateIntervalId){
                     clearInterval(this.autoRotateIntervalId);
                     this.autoRotateIntervalId = false;
