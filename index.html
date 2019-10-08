@@ -38,9 +38,10 @@ a {
   width: 70%;
   height: 70%;
   background-color:transparent;
+  opacity: 0;
   overflow: auto;
   position: fixed;
-  border: solid black 2px;
+  
   padding: 10px 10px 10px 10px;
   color: wheat;
 }
@@ -80,6 +81,7 @@ color: #0b1134;
   border: solid black 2px;
   padding: 10px 10px 10px 10px;
   color:white;
+  margin-top: 45px;
 }
 
 .logo-final {
@@ -94,6 +96,7 @@ color: #0b1134;
   color: #ff1177;
   text-align: center;
   margin-right: 50px;
+  margin-top:100vh;
 }
 .contact-us {
   margin-top: 2.5vh;
@@ -108,7 +111,7 @@ color: #0b1134;
 }
 .name_events{
   margin-top: 40px;
-  color: #ff1177;
+  color: #ffb8db;
   transition: 0.5s ease;
 
 }
@@ -188,7 +191,7 @@ color: #0b1134;
   <div class="logo">
       <img class="logo-final" src="imgres/logo_final.png">
   </div>
-  <div class="ps">
+  <div class="ps glow">
     Prof Shows
   </div>
   <div class="contact-us" >
@@ -196,9 +199,9 @@ color: #0b1134;
   </div>
 </div>
 <div style="display: flex; justify-content: center">
-  <div id="events" style="transition: 0.5s ease-in; opacity: 0;">
-    <i class="fa fa-close" id="close_events" style="float: right; font-size: 36px" onclick="closeEvents2()"></i>
-    <div class="events-wrapper">
+  <div id="events" style="transition: 0.5s ease-in;opacity: 0;">
+    <i class="fa fa-close" style="float: right;right: 0; font-size: 36px" onclick ="closeEvents()"></i>
+    <div class="events-wrapper" style="display: flex;flex-direction: column; ">
       <div id="event-pic"></div>
       <div id="event-info">
       <div id="event-name"></div>
@@ -257,7 +260,7 @@ color: #0b1134;
     <li>
       <div class="inner"  value='0' onclick=click_event(0)>
         
-        <img class='picture' src="neon1.jpg" >
+        <img class='picture name_events' src="neon1.jpg" >
         <h1 class="name_events">Event 1</h1 >
         
       </div>
@@ -266,7 +269,7 @@ color: #0b1134;
     <li>
       <div class="inner"  value='1'onclick=click_event(1)>
          
-        <img class='picture' src="neon2.jpg" >
+        <img class='picture name_events' src="neon2.jpg" >
         <h1 class="name_events">Event 2</h1 >
         
       </div>
@@ -275,7 +278,7 @@ color: #0b1134;
     <li>
       <div class="inner"  value='2'onclick=click_event(2)>
          
-        <img class='picture' src="neon3.jpg" >
+        <img class='picture name_events' src="neon3.jpg" >
         <h1 class="name_events">Event 3</h1 >
         
       </div>
@@ -283,7 +286,7 @@ color: #0b1134;
     <li>
       <div class="inner"  value="3"onclick=click_event(3)>
          
-        <img class='picture' src="neon4.jpg" >
+        <img class='picture name_events' src="neon4.jpg" >
         <h1 class="name_events">Event 4</h1 >
         
       </div>
@@ -292,7 +295,7 @@ color: #0b1134;
     <li>
       <div class="inner"  value='4'onclick=click_event(4)>
         
-        <img class='picture' src="neon5.jpg" >
+        <img class='picture name_events' src="neon5.jpg" >
         <h1 class="name_events">Event 5</h1 >
         
       </div>
@@ -306,7 +309,7 @@ color: #0b1134;
 <script>
 $(function(){ 
     $('.rotating-slider').rotatingSlider({
-		slideHeight : Math.min(490, window.innerWidth -80),
+		slideHeight : Math.min(510, window.innerWidth -80),
 		slideWidth : Math.min(480, window.innerWidth - 80),
 	});
 });

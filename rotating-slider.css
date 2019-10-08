@@ -55,7 +55,7 @@
     transform: translateX(-50%) rotate(0);
     transform-origin: center center;
     width: 100%;
-    border: 7px black solid;
+    
 
 }
 .rotating-slider ul.slides li{

@@ -10,31 +10,25 @@ function click_event(n){
     document.getElementById('event-desc').innerHTML=arr_desc[n];
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
     document.getElementById('events').style.opacity = '1';
-    console.log('dsvbjdsnv');
 }
 function closeEvents()
 {   
-    console.log('yyss');
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
-    console.log('hi');
     document.getElementById('events').style.opacity = '0';
-    console.log('sefhsuf');
+    
+
 }
 function openContacts() {
     document.getElementById('contacts').style.opacity = '1';
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
-    console.log('chutiyapa in open co');
+    document.getElementById('events').style.opacity = '0';
+    
     
 }
 function closeContacts()
 {
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementById('contacts').style.opacity = '0';   
+
+   
 }
-function closeEvents2() {
-    console.log('2 working');
-    document.getElementById('events').style.opacity = '0';
-}
-document.getElementById('close_events').addEventListener('click', function() {
-    console.log('click working');
-})
