@@ -5,7 +5,6 @@
 .name_events:hover{
 	animation: neon-2 1.5s ease-in-out infinite alternate; 
     color: #ffffff;
-}
 
 @keyframes neon-1 {
     from {
@@ -17,9 +16,9 @@
 }
 @keyframes neon-2 {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f702c2, 0 0 70px #f702c2, 0 0 80px #f702c2, 0 0 100px #f702c2, 0 0 150px #f702c2;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(240, 4, 208), 0 0 70px rgb(240, 4, 208), 0 0 80px rgb(240, 4, 208), 0 0 100px rgb(240, 4, 208), 0 0 150px rgb(240, 4, 208);
       }
       to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f702c2, 0 0 35px #f702c2, 0 0 40px #f702c2, 0 0 50px #f702c2, 0 0 75px #f702c2;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(240, 4, 208), 0 0 35px rgb(240, 4, 208), 0 0 40px rgb(240, 4, 208), 0 0 50px rgb(240, 4, 208), 0 0 75px rgb(240, 4, 208);
       }
 }
