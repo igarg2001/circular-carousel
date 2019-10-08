@@ -56,8 +56,17 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-
+}
+#contacts{
+  width: 70%;
+  height: 70%;
+  background-color:black;
+  opacity: 0; 
+  overflow: auto;
+  position: fixed;
+  border: solid black 2px;
+  padding: 10px 10px 10px 10px;
+  color:white;
 }
 .nav >div {
     margin-top: 0.001vh;
@@ -95,9 +104,7 @@ a {
   text-align: center;
   
 }  
-.contacts {
-  transition: all 0.5 ease-in;
-}
+
 .contact-name {
   font-size: 1.5em;
   color: wheat;
@@ -130,12 +137,12 @@ a {
   <div class="ps">
     Prof Shows
   </div>
-  <div class="contact-us">
-          <a href="#">Contact Us</a>
+  <div class="contact-us" >
+          <a href="#" onclick="openContacts()">Contact Us</a>
       </div>
 </div>
 <div style="display: flex; justify-content: center">
-  <div class="events" style="transition: all 0.5s ease-in;">
+  <div class="events" style="transition: all 0.5s ease-in;opacity: 0;">
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
     <div class="events-wrapper" style="display: flex;flex-direction: column; ">
       <div id="event-pic"></div>
@@ -145,18 +152,19 @@ a {
   </div>
 </div>
 <div style="display: flex; justify-content: center">
-  <div class="contacts" style="transition: all 0.5s ease-in">
-    <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
-  <div class="contacts-wrapper>
-    <div class="contact-1">
-      <div class="contact-name">Priyanshu Shukla</div>
-      <div class="contact-number">9876543210</div>
-    </div>
-    <div class="contact-2">
-      <div class="contact-name">Ishan Garg</div>
-      <div class="contact-number">0123456789</div>
+  <div id="contacts">
+      <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
+      <div class="contacts-wrapper">
+        <div class="contact-1">
+          <div class="contact-name">Priyanshu Shukla</div>
+          <div class="contact-number">9876543210</div>
+        </div>
+        <div class="contact-2">
+          <div class="contact-name">Ishan Garg</div>
+          <div class="contact-number">0123456789</div>
+        </div>
       </div>
-    </div></div>
+    </div>
 </div>
  
 <div class="rotating-slider" style="opacity: 1; transition: all 0.5s ease-in;">

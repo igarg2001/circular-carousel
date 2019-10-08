@@ -15,17 +15,17 @@ function click_event(n){
 function closeEvents()
 {
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
-    document.getElementsByClassName('events')[0].style.opacity = '0';   
+    document.getElementsByClassName('events')[0].style.opacity = '';   
 }
 function openContacts() {
-    document.querySelectorAll('.contacts')[0].style.opacity = '1';
+    document.getElementById('contacts').style.opacity = '1';
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
-    document.querySelectorAll('.contacts')[0].style.transition = '0.5s ease-in';
-    document.getElementsByClassName('events')[0].style.opacity = '0';  
+    
+    
 }
 function closeContacts()
 {
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
-    document.getElementsByClassName('contacts')[0].style.opacity = '0';   
-    document.querySelectorAll('.contacts')[0].style.transition = '0.5s ease-out';
+    document.getElementById('contacts').style.opacity = '0';   
+   
 }
