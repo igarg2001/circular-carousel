@@ -11,16 +11,18 @@ function click_event(n){
     document.getElementById('event-desc').innerHTML=arr_desc[n];
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
     document.getElementsByClassName('events')[0].style.opacity = '1';
+    console.log('open working');
 }
 function closeEvents()
 {
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementsByClassName('events')[0].style.opacity = '';   
+    console.log('close working');
 }
 function openContacts() {
     document.getElementById('contacts').style.opacity = '1';
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
-    
+    console.log('close')
     
 }
 function closeContacts()
