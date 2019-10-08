@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
 <link rel= "stylesheet" href="glow.css">
-<link rel="stylesheet/scss" type="text/css" href="glitch.css">
 <style>
 body {
   background: url('neon8.jpg');
@@ -42,8 +41,7 @@ a {
   opacity: 0; 
   overflow: auto;
   position: fixed;
-  border: solid white 2px;
-  border-radius: 5px;
+  border: solid black 2px;
   padding: 10px 10px 10px 10px;
   color: wheat;
 }
@@ -52,18 +50,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-#event-name {
-  font-family: Pacifico;
-  color: #ffdd1b;
-  margin-top: 1vh;
-  padding-bottom: 2vh;
-  font-size: 3em;
-}
-.events-desc {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .nav {
     
@@ -74,7 +60,7 @@ a {
 
 }
 .nav >div {
-    margin-top: 1vh;
+    margin-top: 0.001vh;
 }
 .logo-final {
     height: 14vh;
@@ -95,9 +81,8 @@ a {
     margin-right: 10px;
     transition: 0.5s ease;
 }
-
 .name_events{
-  
+  margin-top: 40px;
   color: #ff1177;
   transition: 0.5s ease;
 
@@ -108,20 +93,23 @@ a {
 }
 .inner{
   text-align: center;
-}  
+  
+}
+#event-pic{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.picture{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
 
-.contact-name {
-  font-size: 1.5em;
-  color: wheat;
 }
-.contact-1, .contact-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.contact-number {
-  font-size: 1.5em;
-  color: wheat;
+.picture:hover{
+   -ms-transform: scale(1.5); /* IE 9 */
+   -webkit-transform: scale(1.5); /* Safari 3-8 */
+   transform: scale(1.5); 
 }
 </style>
 </head>
@@ -136,51 +124,27 @@ a {
     Prof Shows
   </div>
   <div class="contact-us">
-          <a href="#" onclick="openContacts()">Contact Us</a>
+          <a href="#">Contact Us</a>
       </div>
 </div>
 <div style="display: flex; justify-content: center">
   <div class="events" style="transition: all 0.5s ease-in;">
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
-    <div class="events-wrapper">
-    <div id="event-name"></div>
-    <div class="event-desc">
+    <div class="events-wrapper" style="display: flex;flex-direction: column; ">
       <div id="event-pic"></div>
-      <div id="event-info"></div>
-    </div>
+      <div id="event-name"></div>
+      <div id="event-desc"></div>
     </div>  
   </div>
 </div>
-<div class= "contacts" style="display: flex; flex-direction: column; justify-content: center; opacity: 0; height: 70%; width: 70%;">
-  <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
-  <div class="contact-1">
-<div class="contact-name">Priyanshu Shukla</div>
-<div class="contact-number">9876543210</div>
-</div>
-  <div class="contact-2">
-    <div class="contact-name">Ishan Garg</div>
-    <div class="contact-number">0123456789</div>
-    </div>
-  </div>
 
 <div class="rotating-slider" style="opacity: 1; transition: all 0.5s ease-in;">
   <ul class="slides">
     <li>
       <div class="inner"  value='0' onclick=click_event(0)>
         
-        <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          </div>
-           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          </div>
-           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          </div>
-           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          </div>
-           <div class="c-glitch" style="background-image: url('neon1.jpg');border-radius: 50%;height: 200px;width: 200px;">
-          </div>
-        </div> 
-        <h2 class="name_events">Event 1</h2 >
+        <img class='picture' src="neon1.jpg" >
+        <h1 class="name_events">Event 1</h1 >
         
       </div>
     </li>
@@ -188,8 +152,8 @@ a {
     <li>
       <div class="inner"  value='1'onclick=click_event(1)>
          
-        <img src="neon2.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
-        <h2 class="name_events">Event 2</h2 >
+        <img class='picture' src="neon2.jpg" >
+        <h1 class="name_events">Event 2</h1 >
         
       </div>
     </li>
@@ -197,16 +161,16 @@ a {
     <li>
       <div class="inner"  value='2'onclick=click_event(2)>
          
-        <img src="neon3.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
-        <h2 class="name_events">Event 3</h2 >
+        <img class='picture' src="neon3.jpg" >
+        <h1 class="name_events">Event 3</h1 >
         
       </div>
     </li>
     <li>
       <div class="inner"  value="3"onclick=click_event(3)>
          
-        <img src="neon4.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
-        <h2 class="name_events">Event 4</h2 >
+        <img class='picture' src="neon4.jpg" >
+        <h1 class="name_events">Event 4</h1 >
         
       </div>
     </li>
@@ -214,8 +178,8 @@ a {
     <li>
       <div class="inner"  value='4'onclick=click_event(4)>
         
-        <img src="neon5.jpg" style="border-radius: 50%;height: 200px;width: 200px;">
-        <h2 class="name_events">Event 5</h2 >
+        <img class='picture' src="neon5.jpg" >
+        <h1 class="name_events">Event 5</h1 >
         
       </div>
     </li>
