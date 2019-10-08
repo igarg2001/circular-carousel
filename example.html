@@ -34,11 +34,11 @@ a {
   width: 100%;
 
 }
-.events{
+#events{
   width: 70%;
   height: 70%;
   background-color:transparent;
-  opacity: 0; 
+  
   overflow: auto;
   position: fixed;
   border: solid black 2px;
@@ -116,14 +116,52 @@ a {
 }
 .picture{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 
 }
 .picture:hover{
-   -ms-transform: scale(1.5); /* IE 9 */
-   -webkit-transform: scale(1.5); /* Safari 3-8 */
-   transform: scale(1.5); 
+   -ms-transform: scale(1.25); /* IE 9 */
+   -webkit-transform: scale(1.25); /* Safari 3-8 */
+   transform: scale(1.25); 
+   border-radius: 25%;
+}
+.contact-1{grid-area: contact1;}
+.contact-2{grid-area: contact2;}
+.contact-3{grid-area: contact3;}
+.contact-4{grid-area: contact4;}
+.contact-5{grid-area: contact5;}
+.contact-6{grid-area: contact6;}
+
+.contacts-wrapper{
+  display: grid;
+  grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
+  grid-gap: 5px;
+  margin-top: 6%;
+  margin-right: 4%;
+  margin-left: 4%;
+  overflow: hidden;
+}
+.contacts-wrapper>div{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+  height: auto;
+  width: auto;
+  padding: 10%;
+
+}
+.contacts-wrapper>div>div{
+  text-align: center;
+  margin: 4px;
+}
+.contact-pic{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
 }
 </style>
 </head>
@@ -139,10 +177,10 @@ a {
   </div>
   <div class="contact-us" >
           <a href="#" onclick="openContacts()">Contact Us</a>
-      </div>
+  </div>
 </div>
 <div style="display: flex; justify-content: center">
-  <div class="events" style="transition: all 0.5s ease-in;opacity: 0;">
+  <div id="events" style="transition: 0.5s ease-in;opacity: 0;">
     <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
     <div class="events-wrapper" style="display: flex;flex-direction: column; ">
       <div id="event-pic"></div>
@@ -156,12 +194,41 @@ a {
       <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
       <div class="contacts-wrapper">
         <div class="contact-1">
+          <div style="display: flex; justify-content: center">
+            <div class="contact-pic" style="background-color: white;"></div>
+          </div>
           <div class="contact-name">Priyanshu Shukla</div>
           <div class="contact-number">9876543210</div>
         </div>
         <div class="contact-2">
+          <div class="contact-pic"></div>
+          <div class="contact-name"></div>
+          <div class="contact-number"></div>
+        </div>
+         <div class="contact-3">
+          <div style="display: flex; justify-content: center">
+            <div class="contact-pic" style="background-color: white;"></div>
+          </div>
           <div class="contact-name">Ishan Garg</div>
           <div class="contact-number">0123456789</div>
+        </div>
+         <div class="contact-4">
+          <div class="contact-pic"></div>
+          <div class="contact-name"></div>
+          <div class="contact-number"></div>
+        </div>
+
+        <div class="contact-5">
+         <div style="display: flex; justify-content: center">
+            <div class="contact-pic" style="background-color: white;"></div>
+          </div>
+          <div class="contact-name">Chirag Wadhwa</div>
+          <div class="contact-number">3563989329</div>
+        </div>
+         <div class="contact-6">
+          <div class="contact-pic"></div>
+          <div class="contact-name"></div>
+          <div class="contact-number"></div>
         </div>
       </div>
     </div>
