@@ -109,7 +109,9 @@ a {
 .inner{
   text-align: center;
 }  
-
+.contacts {
+  transition: all 0.5 ease-in;
+}
 .contact-name {
   font-size: 1.5em;
   color: wheat;
@@ -151,17 +153,21 @@ a {
     </div>  
   </div>
 </div>
-<div class= "contacts" style="display: flex; flex-direction: column; justify-content: center; opacity: 0; height: 70%; width: 70%;">
-  <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
-  <div class="contact-1">
-<div class="contact-name">Priyanshu Shukla</div>
-<div class="contact-number">9876543210</div>
-</div>
-  <div class="contact-2">
-    <div class="contact-name">Ishan Garg</div>
-    <div class="contact-number">0123456789</div>
+<div style="display: flex; justify-content: center">
+  <div class="contacts" style="transition: all 0.5s ease-in">
+    <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
+  <div class="contacts-wrapper>
+    <div class="contact-1">
+      <div class="contact-name">Priyanshu Shukla</div>
+      <div class="contact-number">9876543210</div>
     </div>
-  </div>
+    <div class="contact-2">
+      <div class="contact-name">Ishan Garg</div>
+      <div class="contact-number">0123456789</div>
+      </div>
+    </div></div>
+</div>
+ 
 
 <div class="rotating-slider" style="opacity: 1; transition: all 0.5s ease-in;">
   <ul class="slides">

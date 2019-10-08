@@ -3,7 +3,7 @@
     color: #ffffff;
 }
 .name_events:hover{
-	animation: neon-1 1.5s ease-in-out infinite alternate; 
+	animation: neon-2 1.5s ease-in-out infinite alternate; 
     color: #031838;
 }
 .inner img:hover{
@@ -16,5 +16,13 @@
       }
       to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+      }
+}
+@keyframes neon-2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(240, 4, 208), 0 0 70px rgb(240, 4, 208), 0 0 80px rgb(240, 4, 208), 0 0 100px rgb(240, 4, 208), 0 0 150px rgb(240, 4, 208);
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(240, 4, 208), 0 0 35px rgb(240, 4, 208), 0 0 40px rgb(240, 4, 208), 0 0 50px rgb(240, 4, 208), 0 0 75px rgb(240, 4, 208);
       }
 }
