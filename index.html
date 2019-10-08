@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>jQuery Rotating Slider Plugin Demo</title>
+<title>Prof Shows</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +38,6 @@ a {
   width: 70%;
   height: 70%;
   background-color:transparent;
-  
   overflow: auto;
   position: fixed;
   border: solid black 2px;
@@ -47,9 +46,23 @@ a {
 }
 .events-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
+}
+#event-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#event-name {
+font-family: Pacifico;
+font-size: 2em;
+color: #0b1134;
+}
+#event-pic {
+  align-self: center;
 }
 .nav {
     
@@ -68,19 +81,22 @@ a {
   padding: 10px 10px 10px 10px;
   color:white;
 }
-.nav >div {
-    margin-top: 0.001vh;
-}
+
 .logo-final {
     height: 14vh;
     width: 14vw;
+    margin-top: 0.001vh;
 }
 .ps {
+  margin-top: 1vh;
   font-family: Monoton;
   font-size: 3.5em;
   color: #ff1177;
   text-align: center;
   margin-right: 50px;
+}
+.contact-us {
+  margin-top: 2.5vh;
 }
 .contact-us a {
     font-family: Audiowide;
@@ -140,7 +156,7 @@ a {
   margin-top: 6%;
   margin-right: 4%;
   margin-left: 4%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .contacts-wrapper>div{
   display: flex;
@@ -180,18 +196,20 @@ a {
   </div>
 </div>
 <div style="display: flex; justify-content: center">
-  <div id="events" style="transition: 0.5s ease-in;opacity: 0;">
-    <i class="fa fa-close" style="float: right; font-size: 36px" onclick="closeEvents()"></i>
-    <div class="events-wrapper" style="display: flex;flex-direction: column; ">
+  <div id="events" style="transition: 0.5s ease-in; opacity: 0;">
+    <i class="fa fa-close" id="close_events" style="float: right; font-size: 36px" onclick="closeEvents2()"></i>
+    <div class="events-wrapper">
       <div id="event-pic"></div>
+      <div id="event-info">
       <div id="event-name"></div>
       <div id="event-desc"></div>
+      </div>
     </div>  
   </div>
 </div>
 <div style="display: flex; justify-content: center">
   <div id="contacts">
-      <i class="fa fa-close" style="float: right; right: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
+      <i class="fa fa-close" style="float: left; left: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
       <div class="contacts-wrapper">
         <div class="contact-1">
           <div style="display: flex; justify-content: center">
@@ -288,8 +306,8 @@ a {
 <script>
 $(function(){ 
     $('.rotating-slider').rotatingSlider({
-		slideHeight : Math.min(360, window.innerWidth -80),
-    slideWidth : Math.min(480, window.innerWidth - 80),
+		slideHeight : Math.min(490, window.innerWidth -80),
+		slideWidth : Math.min(480, window.innerWidth - 80),
 	});
 });
     </script>
