@@ -7,6 +7,7 @@
 <title>Prof Shows</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
 <link rel= "stylesheet" href="glow.css">
@@ -39,7 +40,7 @@ a {
   height: 70%;
   background-color:transparent;
   opacity: 0;
-  overflow: auto;
+  overflow: hidden;
   position: fixed;
   
   padding: 10px 10px 10px 10px;
@@ -56,14 +57,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 25vw;
+
 }
 #event-name {
 font-family: Pacifico;
-font-size: 2em;
-color: #0b1134;
+font-size: 2.5em;
+color: #430a8d;
+margin-top: 5vh;
 }
 #event-pic {
-  align-self: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+#event-desc {
+  margin-top: 7vh;
+  line-height: 4vh;
+  font-family : Iceland;
+  font-size: 1.5em;
+  color: #dca4ec;
+
 }
 .nav {
     display: flex;
@@ -105,7 +118,10 @@ color: #0b1134;
     color: #ff9900;
     text-decoration: none;
     margin-right: 10px;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in;
+}
+.contact-us a:hover {
+  color: #ffb8db;
 }
 .name_events{
   margin-top: 40px;
@@ -157,7 +173,7 @@ color: #0b1134;
   margin-top: 6%;
   margin-right: 4%;
   margin-left: 4%;
-  overflow-y: hidden;
+  overflow: auto;
 }
 .contacts-wrapper>div{
   display: flex;
@@ -199,7 +215,7 @@ color: #0b1134;
 <div style="display: flex; justify-content: center">
   <div id="events" style="transition: 0.5s ease-in;opacity: 0;">
     <i class="fa fa-close" style="float: right;right: 0; font-size: 36px" onclick ="closeEvents()"></i>
-    <div class="events-wrapper" style="display: flex;flex-direction: column; ">
+    <div class="events-wrapper">
       <div id="event-pic"></div>
       <div id="event-info">
       <div id="event-name"></div>

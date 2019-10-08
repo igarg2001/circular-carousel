@@ -1,9 +1,9 @@
 var p = document.querySelectorAll('.inner');
 let arr_name=['Event 1','Event 2','Event 3','Event 4','Event 5'];
-let arr_desc=['This is the description for Event 1','This is the description for Event 2','This is the description for Event 3','This is the description for Event 4','This is the description for Event 5'];
+let arr_desc=['The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help. This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense. <br> Event 1','The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help. This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense. <br> Event 2','The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help. This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense. <br> Event 3','The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help. This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense. <br> Event 4','The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help. This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense. <br> Event 5'];
 function click_event(n){
     let q=n+1;
-    document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 50px; width : 50px">';
+    document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 60vh; width : 40vw; transform: translateX(-5vw)">';
     document.getElementById('event-name').innerHTML=''
     document.getElementById('event-name').innerHTML=arr_name[n];
     document.getElementById('event-desc').innerHTML='';
