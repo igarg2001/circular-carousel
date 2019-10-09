@@ -10,7 +10,7 @@
                 
                 this.settings = $.extend({
                     autoRotate: true,
-                    autoRotateInterval: 4000,
+                    autoRotateInterval: 4500,
                     draggable: true,
                     directionControls: true,
                     directionLeftText: '&lsaquo;',
