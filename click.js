@@ -10,11 +10,13 @@ function click_event(n){
     document.getElementById('event-desc').innerHTML=arr_desc[n];
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
     document.getElementById('events').style.opacity = '1';
+    document.body.style.backdropFilter = 'blur(5px)';
 }
 function closeEvents()
 {   
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementById('events').style.opacity = '0';
+    document.body.style.backdropFilter = 'blur(0px)';
     
 
 }
@@ -22,6 +24,7 @@ function openContacts() {
     document.getElementById('contacts').style.opacity = '1';
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
     document.getElementById('events').style.opacity = '0';
+    document.body.style.backdropFilter = 'blur(5px)';
     
     
 }
@@ -29,6 +32,6 @@ function closeContacts()
 {
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementById('contacts').style.opacity = '0';   
-
+    document.body.style.backdropFilter = 'blur(0px)';
    
 }
