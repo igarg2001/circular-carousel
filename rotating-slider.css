@@ -93,6 +93,51 @@
     text-align: center;
     margin-right: 50px;
   }
+  body {
+    background: url('neon8.jpg');
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+    background-size: cover;
+  }
+  #events{
+    width: 80%;
+    height: 70%;
+    background-color:transparent;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    color: wheat;
+  }
+  .events-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  #event-name {
+    font-family: Pacifico;
+    font-size: 3.5em;
+    color: #430a8d;
+    margin-top: 10vh;
+    margin-right: 3vw;
+    }
+    #event-desc {
+        margin-top: 7vh;
+        line-height: 5vh;
+        font-family : Iceland;
+        font-size: 1.8em;
+        color: #dca4ec;
+      
+      }
+      #event-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30vw;
+      }
 @media all and (max-width : 500px) {
     .rotating-slider {
         margin-left: -5vh;
