@@ -1,4 +1,4 @@
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 600px) {
     body {
         background-position-x: -70vw;
     }
@@ -11,15 +11,15 @@
         width: 25%;
     }
     #pic1, #pic2, #pic3, #pic4, #pic5  {
-        height: 200px;
-        width: 200px;
+        height: 50vw;
+        width: 50vw;
     }
     .logo-final {
         height: 9.5vh;
         width: 32vw;
     }
     #heading {
-        font-size: 2em;
+        font-size: 4.5vh;
         width: 100%;
         margin-right: 5vw;
         right: 0;
@@ -29,8 +29,8 @@
         height: 25vh;
     }
    .contact-us {
-       height: 33vh;
-       width: 65vw;
+       height: 25vh;
+       width: 70vw;
    }
    .contact-us > a{
        font-size: 1.2em;
@@ -58,17 +58,17 @@
     margin-top: 5vh;
 }
 #event-name {
-    font-size: 2em;
+    font-size: 4.5vh;
     margin-top: 2vh;
     width: 100%;
-    margin-left: 40vw;
+    margin-left: 30vw;
 }
 #event-desc {
     margin-top: 4vh;
     width: 100%;
     line-height: 4vh;
     margin-right: 5vw;
-    font-size: 1.4em;
+    font-size: 2.5vh;
     padding: 0 0 0 0;
 }
 #event-info {
@@ -76,5 +76,37 @@
 }
 #close_event {
     margin-right: 1vh;
+}
+}
+@media all and (max-width : 400px) {
+    #heading {
+        transform: translateY(5vh);
+    }
+    .rotating-slider ul.direction-controls li.left-arrow {
+        top: 35%;
+        right: 110vw;
+    }
+    .rotating-slider ul.direction-controls li.right-arrow {
+     top: 35%;
+     left: 110vw;
+ }
+ body {
+    background-position-x: -100vw;
+}
+#event-pic {
+    margin-left: 25vw;
+    margin-bottom: 0;
+    bottom: 0;
+}
+#event-name {
+    margin-top: -2.55vh;
+    top: 0;
+}
+#event-desc {
+    margin-top: 1vh;
+    line-height: 3.5vh;
+}
+.contact-us {
+    transform: translateX(-1vw);
 }
 }
