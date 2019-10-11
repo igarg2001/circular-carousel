@@ -72,3 +72,31 @@
     width: 100%;
 
 }
+.contact-us a {
+    font-family: Audiowide;
+    font-size: 2em;
+    color: #ff9900;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.5s ease-in;
+}
+.logo-final {
+    height: 14vh;
+    width: 14vw;
+    margin-top: 0.001vh;
+}
+#heading {
+    margin-top: 1vh;
+    font-family: Monoton;
+    font-size: 3.5em;
+    color: #ff1177;
+    text-align: center;
+    margin-right: 50px;
+  }
+@media all and (max-width : 500px) {
+    .rotating-slider {
+        margin-left: -5vh;
+        height: 20vh;
+        margin-top: 0 auto;
+    }
+}

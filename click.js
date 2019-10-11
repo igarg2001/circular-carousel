@@ -40,5 +40,6 @@ function closeContacts()
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementById('contacts').style.opacity = '0';   
     document.body.style.backdropFilter = 'blur(0px)';
+    console.log('working');
    
 }

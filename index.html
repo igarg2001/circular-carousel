@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
 <link rel= "stylesheet" href="glow.css">
+<link rel="stylesheet" href="mobile.css">
 <style>
 body {
   background: url('neon8.jpg');
@@ -98,30 +99,8 @@ margin-right: 3vw;
   color:white;
   margin-top: 45px;
 }
-
-.logo-final {
-    height: 14vh;
-    width: 14vw;
-    margin-top: 0.001vh;
-}
-.ps {
-  margin-top: 1vh;
-  font-family: Monoton;
-  font-size: 3.5em;
-  color: #ff1177;
-  text-align: center;
-  margin-right: 50px;
-}
 .contact-us {
   margin-top: 2.5vh;
-}
-.contact-us a {
-    font-family: Audiowide;
-    font-size: 2em;
-    color: #ff9900;
-    text-decoration: none;
-    margin-right: 10px;
-    transition: 0.5s ease-in;
 }
 .contact-us a:hover {
   color: #ffb8db;
@@ -208,8 +187,8 @@ margin-right: 3vw;
   <div class="logo">
       <a href="https://bits-oasis.org/" target="_blank"><img class="logo-final" src="imgres/logo_final.png"></a>
   </div>
-  <div class="ps glow">
-    Prof Shows
+  <div class="ps glow" id="heading">
+    Prof <span> Shows </span>
   </div>
   <div class="contact-us" >
           <a href="#" onclick="openContacts()">Contact Us</a>
@@ -278,7 +257,7 @@ margin-right: 3vw;
     <li>
       <div class="inner"  value='0' onclick=click_event(0)>
         
-        <img class='picture name_events' src="neon1.jpg" >
+        <img class='picture name_events' id = "pic1" src="neon1.jpg" >
         <h1  class="name_events">Event 1</h1 >
         
       </div>
@@ -287,7 +266,7 @@ margin-right: 3vw;
     <li>
       <div class="inner"  value='1'onclick=click_event(1)>
          
-        <img class='picture name_events' src="neon2.jpg" >
+        <img class='picture name_events' id="pic2" src="neon2.jpg" >
         <h1 class="name_events">Event 2</h1 >
         
       </div>
@@ -296,7 +275,7 @@ margin-right: 3vw;
     <li>
       <div class="inner"  value='2'onclick=click_event(2)>
          
-        <img class='picture name_events' src="neon3.jpg" >
+        <img class='picture name_events' id="pic3" src="neon3.jpg" >
         <h1 class="name_events">Event 3</h1 >
         
       </div>
@@ -304,7 +283,7 @@ margin-right: 3vw;
     <li>
       <div class="inner"  value="3"onclick=click_event(3)>
          
-        <img class='picture name_events' src="neon4.jpg" >
+        <img class='picture name_events' id="pic4" src="neon4.jpg" >
         <h1 class="name_events">Event 4</h1 >
         
       </div>
@@ -313,7 +292,7 @@ margin-right: 3vw;
     <li>
       <div class="inner"  value='4'onclick=click_event(4)>
         
-        <img class='picture name_events' src="neon5.jpg" >
+        <img class='picture name_events' id="pic5" src="neon5.jpg" >
         <h1 class="name_events">Event 5</h1 >
         
       </div>
@@ -327,8 +306,8 @@ margin-right: 3vw;
 <script>
 $(function(){ 
     $('.rotating-slider').rotatingSlider({
-		slideHeight : Math.min(510, window.innerWidth -80),
-		slideWidth : Math.min(480, window.innerWidth - 80),
+		slideHeight : Math.min(510, window.innerWidth -70),
+		slideWidth : Math.min(480, window.innerWidth - 70),
 	});
 });
     </script>
