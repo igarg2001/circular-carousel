@@ -138,16 +138,17 @@
         align-items: center;
         margin-left: 30vw;
       }
-@media all and (max-width : 600px) {
+@media all and (min-width : 381px) and (max-width : 600px) {
     .rotating-slider {
         margin-left: -10vw;
         height: 20vh;
         margin-top: 0 auto;
     }
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 320px) {
     .rotating-slider {
         margin-left: -28vw;
-    }
+    }  
+}    
     
 }
 }
