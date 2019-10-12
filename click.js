@@ -5,14 +5,20 @@ let event_flag=true;
 function click_event(n){
     let q=n+1;
     if(event_flag==true){
-        document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 50vh; width : 35vw; border-radius : 15px;">';
+        if(window.innerWidth>600){
+        document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 50vh; width : 35vw; border-radius : 15px;">';}
+        else {
+            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 40vw; width : 40vw; border-radius : 50%;">';
+        }
         document.getElementById('event-name').innerHTML=''
         document.getElementById('event-name').innerHTML=arr_name[n];
         document.getElementById('event-desc').innerHTML='';
         document.getElementById('event-desc').innerHTML=arr_desc[n];
         document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
         document.getElementById('events').style.opacity = '1';
+        document.getElementById('events').style.zIndex = '1000'; //Wadhwa's contri ;-)
         document.body.style.backdropFilter = 'blur(5px)';
+        document.body.style.MozBackdropFilter = 'blur(5px)';
         event_flag=false;
     }
 }
@@ -20,14 +26,17 @@ function closeEvents()
 {   
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
     document.getElementById('events').style.opacity = '0';
+    document.getElementById('events').style.zIndex = '0'; 
     document.body.style.backdropFilter = 'blur(0px)';
     event_flag=true;
+    console.log('event-closed');
     
 
 }
 function openContacts() {
     event_flag=false;
     document.getElementById('contacts').style.opacity = '1';
+    document.getElementById('contacts').style.zIndex = '1000';
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '0';
     document.getElementById('events').style.opacity = '0';
     document.body.style.backdropFilter = 'blur(5px)';
@@ -38,7 +47,8 @@ function closeContacts()
 {
     event_flag=true;
     document.getElementsByClassName('rotating-slider')[0].style.opacity = '1';
-    document.getElementById('contacts').style.opacity = '0';   
+    document.getElementById('contacts').style.opacity = '0'; 
+    document.getElementById('contacts').style.zIndex = '0';  
     document.body.style.backdropFilter = 'blur(0px)';
     console.log('working');
    
