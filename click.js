@@ -8,7 +8,7 @@ function click_event(n){
         if(window.innerWidth>600){
         document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 50vh; width : 35vw; border-radius : 15px;">';}
         else {
-            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 40vw; width : 40vw; border-radius : 50%;">';
+            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 35vw; width : 35vw; border-radius : 50%;">';
         }
         document.getElementById('event-name').innerHTML=''
         document.getElementById('event-name').innerHTML=arr_name[n];
