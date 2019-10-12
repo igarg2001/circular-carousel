@@ -127,6 +127,7 @@
      }   
      .rotating-slider {
          margin-left: -15vw;
+         width: 70vw;
      }
      #event-info {
          margin-top: 0vh;
