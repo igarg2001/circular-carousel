@@ -223,4 +223,11 @@
             rotatingSlider.init(this);
         });
     };
+    
 }(jQuery));
+$(function(){ 
+    $('.rotating-slider').rotatingSlider({
+        slideHeight : Math.min(510, window.innerWidth -70),
+        slideWidth : Math.min(480, window.innerWidth - 70),
+    });
+});

@@ -53,3 +53,4 @@ function closeContacts()
     console.log('working');
    
 }
+console.log(window.innerWidth);
