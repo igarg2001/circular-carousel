@@ -17,7 +17,7 @@ body {
   background: url('neon8.jpg');
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
-  overflow: hidden;
+  
   background-size: cover;
 }
 a {
@@ -149,7 +149,7 @@ margin-right: 3vw;
 .contact-5{grid-area: contact5;}
 .contact-6{grid-area: contact6;}
 
-.contacts-wrapper{
+  .contacts-wrapper{
   display: grid;
   grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
   grid-gap: 5px;
@@ -158,6 +158,8 @@ margin-right: 3vw;
   margin-left: 4%;
   overflow: auto;
 }
+
+
 .contacts-wrapper>div{
   display: flex;
   flex-direction: column;
