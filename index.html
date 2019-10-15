@@ -7,6 +7,7 @@
 <title>Prof Shows</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lilita+One|Montaga|Montserrat|Montserrat+Alternates&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="rotating-slider.css">
@@ -41,8 +42,8 @@ h1{
     justify-content: space-between;
 }
 #contacts{
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   background-color:black;
   opacity: 0; 
   overflow: auto;
@@ -50,14 +51,12 @@ h1{
   border: solid black 2px;
   padding: 10px 10px 10px 10px;
   color:white;
-  margin-top: 45px;
+ /* margin-top: 45px;*/
 }
 .contact-us {
   margin-top: 2.5vh;
 }
-.contact-us a:hover {
-  color: #ffb8db;
-}
+
 .name_events{
   margin-top: 40px;
   color: #ffb8db;
@@ -89,13 +88,15 @@ h1{
   width: 300px;
 
 }
-.picture:hover{
-   -ms-transform: scale(1.25); /* IE 9 */
-   -webkit-transform: scale(1.25); /* Safari 3-8 */
-   -moz-transform: scale(1.25);/*Firefox*/
+/*@media screen and (min-width: 600px){
+  .picture:hover{
+   -ms-transform: scale(1.25); /* IE 9 *//*
+   -webkit-transform: scale(1.25); /* Safari 3-8 *//*
+   -moz-transform: scale(1.25);/*Firefox*//*
    transform: scale(1.25); 
    border-radius: 25%;
 }
+}*/
 .contact-1{grid-area: contact1;}
 .contact-2{grid-area: contact2;}
 .contact-3{grid-area: contact3;}
@@ -138,14 +139,14 @@ h1{
 </style>
 </head>
 <body translate="no">
-<div class="nav">
-  <div class="logo">
+<div class="nav" id="nav">
+  <div class="logo" id="logo">
       <a href="https://bits-oasis.org/" target="_blank"><img class="logo-final" src="imgres/logo_final.png"></a>
   </div>
   <div class="ps glow" id="heading">
     Prof Shows
   </div>
-  <div class="contact-us" >
+  <div class="contact-us" id="contact-us">
           <a href="#" onclick="openContacts()">Contact Us</a>
   </div>
 </div>

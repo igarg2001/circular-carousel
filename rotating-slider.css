@@ -73,11 +73,11 @@
 
 }
 .contact-us a {
-    font-family: Audiowide;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 2em;
     color: #ff9900;
     text-decoration: none;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     transition: 0.5s ease-in;
 }
 .logo-final {
@@ -95,7 +95,7 @@
   }
   body {
     background: url('neon8.jpg');
-    font-family: 'Roboto Slab', sans-serif;
+    font-family:'Montserrat Alternates', sans-serif;
     font-weight: 300;
     overflow: hidden;
     background-size: cover;
@@ -118,16 +118,16 @@
     align-content: center;
   }
   #event-name {
-    font-family: Pacifico;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 3.5em;
-    color: #430a8d;
+    color:#f3d9e6;
     margin-top: 10vh;
     margin-right: 3vw;
     }
     #event-desc {
         margin-top: 7vh;
         line-height: 5vh;
-        font-family : Iceland;
+        font-family :'Montserrat Alternates', sans-serif;
         font-size: 1.8em;
         color: #dca4ec;
       
