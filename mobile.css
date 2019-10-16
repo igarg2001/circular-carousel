@@ -1,4 +1,4 @@
-@media all and (max-width: 720px)and (min-width: 601px){
+@media all and (max-width: 699px)and (min-width: 601px){
     body {
         background-position-x: -70vw;
         overflow: hidden;
@@ -107,11 +107,61 @@
     }
 
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) and (max-width: 900px){
   .logo-final {
-    height: 14vh;
-    width: 30vh;
+    height: 12vh;
+    width: 20vh;
     margin-top: 0.001vh;
+}
+#heading {
+    font-size: 2em;
+    margin-top: 4vh;
+}
+.contact-us{
+    margin-top: 4.3vh;
+}
+#pic1, #pic2, #pic3, #pic4, #pic5{
+    height: 30vw;
+    width: 30vw;
+}
+.rotating-slider ul.direction-controls li.left-arrow {
+    top: 19vh;
+}
+.rotating-slider ul.direction-controls li.right-arrow {
+    top: 19vh;
+}
+#events {
+    width: 100vw;
+    margin-top: 10vh;
+}
+.events-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+#event-pic {
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+}
+#event-name {
+    font-size: 3.0vh;
+    margin-top: 4vh;
+    width: 100%;
+    margin-left: 50vw;
+}
+#event-desc {
+    margin-top: 1vh;
+    width: 100%;
+    line-height: 2.5vh;
+    margin-right: 5vw;
+    font-size: 2.0vh;
+    padding: 0 0 0 0;
+}
+#event-info {
+    margin-left: 20vw;
+    margin-top: 2vh;
+}
+#close_event {
+    margin-right: 1vh;
 }
   .contact-1{grid-area: contact1;}
   .contact-2{grid-area: contact2;}

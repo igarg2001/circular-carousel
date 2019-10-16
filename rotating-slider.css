@@ -72,6 +72,9 @@
     width: 100%;
 
 }
+.contact-us {
+    margin-top: 2.5vh;
+  }
 .contact-us a {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 2em;
