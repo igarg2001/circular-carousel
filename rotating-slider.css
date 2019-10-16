@@ -99,6 +99,8 @@
     font-weight: 300;
     overflow: hidden;
     background-size: cover;
+    max-width: 100vw;
+    max-height: 100vh;
   }
   #events{
     width: 80%;
