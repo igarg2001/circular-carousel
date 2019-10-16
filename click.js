@@ -77,6 +77,7 @@ function openContacts() {
         document.getElementById('nav').style.height='0px'
         document.getElementsByClassName('contact-2')[0].style.height='0px'
         document.getElementsByClassName('contact-4')[0].style.height='0px'
+        document.getElementsByClassName('contact-6')[0].style.height='0px'
     }
     
 }
@@ -94,6 +95,7 @@ function closeContacts()
     document.getElementById('nav').style.height='';
     document.getElementsByClassName('contact-2')[0].style.height=''
     document.getElementsByClassName('contact-4')[0].style.height=''
+    document.getElementsByClassName('contact-6')[0].style.height=''
    
 }
 console.log(window.innerWidth);

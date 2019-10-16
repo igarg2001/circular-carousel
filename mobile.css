@@ -324,3 +324,21 @@
          margin-left: 30vw;
      }
 }
+@media all and (min-width: 1451px) {
+    .contact-1{grid-area: contact1;}
+    .contact-2{grid-area: contact2;}
+    .contact-3{grid-area: contact3;}
+    .contact-4{grid-area: contact4;}
+    .contact-5{grid-area: contact5;}
+    .contact-6{grid-area: contact6;}
+  
+      .contacts-wrapper{
+      display: grid;
+      grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
+      grid-gap: 5px;
+      margin-top: 6%;
+      margin-right: 4%;
+      margin-left: 4%;
+      overflow: auto;
+    }
+}
