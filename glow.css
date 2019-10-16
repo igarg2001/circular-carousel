@@ -2,7 +2,7 @@
     animation: neon-1 1.5s ease-in-out infinite alternate; 
     color: #ffffff;
 }*/
-@media screen and (min-width: 600px){
+/*@media screen and (min-width: 600px){
 	.name_events:hover{
 			animation: neon-2 1.5s ease-in-out infinite alternate; 
 		    color: #ffffff;
@@ -38,5 +38,5 @@
 		    text-shadow: 0 0 5px #fff, 0 0 10px #ffb8db, 0 0 20px #ffb8db, 0 0 30px #ffb8db, 0 0 40px #ffb8db, 0 0 47px #ffb8db, 0 0 55px #ffb8db;
 		  }
 		}
-}
+}*/
 		

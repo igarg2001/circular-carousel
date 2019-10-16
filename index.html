@@ -97,22 +97,7 @@ h1{
    border-radius: 25%;
 }
 }*/
-.contact-1{grid-area: contact1;}
-.contact-2{grid-area: contact2;}
-.contact-3{grid-area: contact3;}
-.contact-4{grid-area: contact4;}
-.contact-5{grid-area: contact5;}
-.contact-6{grid-area: contact6;}
 
-  .contacts-wrapper{
-  display: grid;
-  grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
-  grid-gap: 5px;
-  margin-top: 6%;
-  margin-right: 4%;
-  margin-left: 4%;
-  overflow: auto;
-}
 
 
 .contacts-wrapper>div{
@@ -152,7 +137,7 @@ h1{
 </div>
 <div style="display: flex; justify-content: center">
   <div id="events" style="transition: 0.5s ease-in;opacity: 0;">
-    <i class="fa fa-close" id="close_event" style="float: right;right: 0; font-size: 36px" onclick ="closeEvents()"></i>
+    <i class="fa fa-close" id="close_event" style="float: right;right: 0; font-size: 36px;margin-right: 2vw;" onclick ="closeEvents()"></i>
     <div class="events-wrapper">
       <div id="event-pic"></div>
       <div id="event-info">
@@ -164,12 +149,10 @@ h1{
 </div>
 <div style="display: flex; justify-content: center">
   <div id="contacts">
-      <i class="fa fa-close" style="float: left; left: 0; font-size: 36px; color: wheat;" onclick="closeContacts()"></i>
+      <i class="fa fa-close" style="float: left; left: 0; font-size: 36px; color: wheat;margin-left: 2vw; " onclick="closeContacts()"></i>
       <div class="contacts-wrapper">
         <div class="contact-1">
-          <div style="display: flex; justify-content: center">
-            <div class="contact-pic" style="background-color: white;"></div>
-          </div>
+         
           <div class="contact-name">Priyanshu Shukla</div>
           <div class="contact-number">9876543210</div>
 
@@ -180,9 +163,7 @@ h1{
           <div class="contact-number"></div>
         </div>
          <div class="contact-3">
-          <div style="display: flex; justify-content: center">
-            <div class="contact-pic" style="background-color: white;"></div>
-          </div>
+          
           <div class="contact-name">Ishan Garg</div>
           <div class="contact-number">0123456789</div>
         </div>
@@ -193,9 +174,7 @@ h1{
         </div>
 
         <div class="contact-5">
-         <div style="display: flex; justify-content: center">
-            <div class="contact-pic" style="background-color: white;"></div>
-          </div>
+         
           <div class="contact-name">Chirag Wadhwa</div>
           <div class="contact-number">3563989329</div>
         </div>

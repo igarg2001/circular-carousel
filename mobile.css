@@ -4,6 +4,19 @@
         overflow: hidden;
         height: 100vh;
     }
+    .contacts-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin-top: 6%;
+      margin-right: 4%;
+      margin-left: 4%;
+      overflow: auto;
+      justify-content:space-around;
+      align-content: center;
+    }
+    .contacts-wrapper>div{
+      flex-grow: 1;
+    }
     .picture {
         height: 50px;
         width: 50px;
@@ -100,6 +113,22 @@
     width: 30vh;
     margin-top: 0.001vh;
 }
+  .contact-1{grid-area: contact1;}
+  .contact-2{grid-area: contact2;}
+  .contact-3{grid-area: contact3;}
+  .contact-4{grid-area: contact4;}
+  .contact-5{grid-area: contact5;}
+  .contact-6{grid-area: contact6;}
+
+    .contacts-wrapper{
+    display: grid;
+    grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
+    grid-gap: 5px;
+    margin-top: 6%;
+    margin-right: 4%;
+    margin-left: 4%;
+    overflow: auto;
+  }
 }
 @media screen and (max-width : 600px) {
     body {
@@ -153,43 +182,44 @@
    .rotating-slider ul.direction-controls li.right-arrow {
     top: 50%;
     left: 75vw;
-}
-#events {
-    width: 100vw;
-}
-.events-wrapper {
-    flex-direction: column;
-    justify-content: center;
-}
-#event-pic {
-    margin-left: 27.5vw;
-    margin-top: 5vh;
-}
-#event-name {
-    font-size: 3.5vh;
-    margin-top: -4vh;
-    width: 100%;
-    margin-left: 40vw;
-}
-#event-desc {
-    margin-top: 1vh;
-    width: 100%;
-    line-height: 2.5vh;
-    margin-right: 5vw;
-    font-size: 2.5vh;
-    padding: 0 0 0 0;
-}
-#event-info {
-    margin-left: 22.5vw;
-}
-#close_event {
-    margin-right: 1vh;
-}
-.rotating-slider {
-    height: 50vh;
-    width: 100vw;
-    margin-top: 0 auto;
-}
+  }
+  #events {
+      width: 100vw;
+      margin-top: 10vh;
+  }
+  .events-wrapper {
+      flex-direction: column;
+      justify-content: center;
+  }
+  #event-pic {
+      margin-left: 27.5vw;
+      margin-top: 5vh;
+  }
+  #event-name {
+      font-size: 3.5vh;
+      margin-top: -4vh;
+      width: 100%;
+      margin-left: 40vw;
+  }
+  #event-desc {
+      margin-top: 1vh;
+      width: 100%;
+      line-height: 2.5vh;
+      margin-right: 5vw;
+      font-size: 2.5vh;
+      padding: 0 0 0 0;
+  }
+  #event-info {
+      margin-left: 22.5vw;
+  }
+  #close_event {
+      margin-right: 1vh;
+  }
+  .rotating-slider {
+      height: 50vh;
+      width: 100vw;
+      margin-top: 0 auto;
+  }
 }
 @media all and (max-width : 310px) {
     #heading {
