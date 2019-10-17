@@ -1,4 +1,4 @@
-@media all and (max-width: 720px)and (min-width: 601px){
+@media all and (max-width: 699px)and (min-width: 601px){
     body {
         background-position-x: -70vw;
         overflow: hidden;
@@ -113,11 +113,61 @@
 */
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) and (max-width: 900px){
   .logo-final {
-    height: 14vh;
-    width: 30vh;
+    height: 12vh;
+    width: 20vh;
     margin-top: 0.001vh;
+}
+#heading {
+    font-size: 2em;
+    margin-top: 4vh;
+}
+.contact-us{
+    margin-top: 4.3vh;
+}
+#pic1, #pic2, #pic3, #pic4, #pic5{
+    height: 30vw;
+    width: 30vw;
+}
+.rotating-slider ul.direction-controls li.left-arrow {
+    top: 19vh;
+}
+.rotating-slider ul.direction-controls li.right-arrow {
+    top: 19vh;
+}
+#events {
+    width: 100vw;
+    margin-top: 10vh;
+}
+.events-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+#event-pic {
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+}
+#event-name {
+    font-size: 3.0vh;
+    margin-top: 4vh;
+    width: 100%;
+    margin-left: 50vw;
+}
+#event-desc {
+    margin-top: 1vh;
+    width: 100%;
+    line-height: 2.5vh;
+    margin-right: 5vw;
+    font-size: 2.0vh;
+    padding: 0 0 0 0;
+}
+#event-info {
+    margin-left: 20vw;
+    margin-top: 2vh;
+}
+#close_event {
+    margin-right: 1vh;
 }
   .contact-1{grid-area: contact1;}
   .contact-2{grid-area: contact2;}
@@ -163,7 +213,7 @@
     }
     .logo-final {
         height: 9.5vh;
-        width: 32vw;
+        width: 35vw;
     }
     #heading {
         font-size: 4.5vh;
@@ -180,12 +230,13 @@
        width: 70vw;
    }
    .contact-us > a{
-       font-size: 0.85em;
+       font-size: 5.5vw;
        font-weight: bolder;
        right: 0;
        font-family: 'Montserrat Alternates', sans-serif;
        text-align: center;
-       /*margin-right: 5vw*/;
+       white-space: nowrap;
+       margin-left: -9vw;
        word-break: keep-all;
    }
    .rotating-slider ul.direction-controls li.left-arrow {
@@ -241,17 +292,17 @@
 */
 
 
-@media all and (max-width : 310px) {
+@media all and (max-width : 320px) {
     #heading {
         transform: translateY(5vh);
     }
     .rotating-slider ul.direction-controls li.left-arrow {
-        top: 35%;
+        top: 25vh;
         right: 100vw;
     }
     .rotating-slider ul.direction-controls li.right-arrow {
-     top: 35%;
-     left: 100vw;
+     top: 25vh;
+     left: 67vw;
  }
  body {
     background-position-x: -100vw;
@@ -277,13 +328,14 @@
         transform: translateX(-1vw);
     }
 }
+<<<<<<< HEAD
 
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 
-@media all and (min-width : 311px) and (max-width : 380px) {
+@media all and (min-width : 321px) and (max-width : 380px) {
     body {
         background-position-x: -90vw;
     }
@@ -299,4 +351,22 @@
      #event-pic {
          margin-left: 30vw;
      }
+}
+@media all and (min-width: 1451px) {
+    .contact-1{grid-area: contact1;}
+    .contact-2{grid-area: contact2;}
+    .contact-3{grid-area: contact3;}
+    .contact-4{grid-area: contact4;}
+    .contact-5{grid-area: contact5;}
+    .contact-6{grid-area: contact6;}
+  
+      .contacts-wrapper{
+      display: grid;
+      grid-template-areas: 'contact1 contact2 contact3' 'contact4 contact5 contact6';
+      grid-gap: 5px;
+      margin-top: 6%;
+      margin-right: 4%;
+      margin-left: 4%;
+      overflow: auto;
+    }
 }

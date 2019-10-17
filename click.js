@@ -5,16 +5,17 @@ let event_flag=true;
 function click_event(n){
     let q=n+1;
     if(event_flag==true){
-        if(window.innerWidth>700){
+        if(window.innerWidth>1000){
             document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 50vh; width : 35vw; border-radius : 15px;">';
         }
-        else if(window.innerWidth>600&&window.innerWidth<700){
-            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 15vh; width : 25vw; border-radius : 15px;">';
+        else if(window.innerWidth>600&&window.innerWidth<800){
+            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 30vw; width : 30vw; border-radius : 50%;">';
             document.getElementById('heading').style.display='none'
             document.getElementById('logo').style.marginBottom='20vh'
             document.getElementById('contact-us').style.display='none'
             document.getElementById('nav').style.height='0px'
         }
+
         else {
             document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 35vw; width : 35vw; border-radius : 50%;">';
             document.getElementById('heading').style.display='none'
@@ -76,6 +77,7 @@ function openContacts() {
         document.getElementById('nav').style.height='0px'
         document.getElementsByClassName('contact-2')[0].style.height='0px'
         document.getElementsByClassName('contact-4')[0].style.height='0px'
+        document.getElementsByClassName('contact-6')[0].style.height='0px'
     }
     
 }
@@ -93,6 +95,7 @@ function closeContacts()
     document.getElementById('nav').style.height='';
     document.getElementsByClassName('contact-2')[0].style.height=''
     document.getElementsByClassName('contact-4')[0].style.height=''
+    document.getElementsByClassName('contact-6')[0].style.height=''
    
 }
 console.log(window.innerWidth);
