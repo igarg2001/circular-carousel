@@ -217,12 +217,13 @@
        width: 70vw;
    }
    .contact-us > a{
-       font-size: 0.85em;
+       font-size: 5.5vw;
        font-weight: bolder;
        right: 0;
        font-family: 'Montserrat Alternates', sans-serif;
        text-align: center;
-       /*margin-right: 5vw*/;
+       white-space: nowrap;
+       margin-left: -9vw;
        word-break: keep-all;
    }
    .rotating-slider ul.direction-controls li.left-arrow {
@@ -271,17 +272,17 @@
       margin-top: 0 auto;
   }
 }
-@media all and (max-width : 310px) {
+@media all and (max-width : 320px) {
     #heading {
         transform: translateY(5vh);
     }
     .rotating-slider ul.direction-controls li.left-arrow {
-        top: 35%;
+        top: 25vh;
         right: 100vw;
     }
     .rotating-slider ul.direction-controls li.right-arrow {
-     top: 35%;
-     left: 100vw;
+     top: 25vh;
+     left: 67vw;
  }
  body {
     background-position-x: -100vw;
@@ -303,11 +304,8 @@
     margin-top: 1vh;
     line-height: 3.5vh;
 }
-.contact-us {
-    transform: translateX(-1vw);
 }
-}
-@media all and (min-width : 311px) and (max-width : 380px) {
+@media all and (min-width : 321px) and (max-width : 380px) {
     body {
         background-position-x: -90vw;
     }
