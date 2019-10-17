@@ -18,7 +18,7 @@ function click_event(n){
         }
 
         else {
-            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 35vw; width : 35vw; border-radius : 50%;">';
+            document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 50vw; width : 50vw; border-radius : 50%;">';
             document.getElementById('heading').style.display='none'
             document.getElementById('heading-m').style.display='none'
             document.getElementById('logo').style.marginBottom='20vh'

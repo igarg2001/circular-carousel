@@ -204,6 +204,7 @@
         color: #ff1177;
         white-space: nowrap;
         display: block;
+        margin-top: 5vh;
 
     }
     body {
@@ -220,8 +221,11 @@
         font-size: 2.5vh;
     }
     #pic1, #pic2, #pic3, #pic4, #pic5  {
-        height: 40vw;
-        width: 40vw;
+        height: 45vw;
+        width: 45vw;
+    }
+    .logo {
+        height: 10vh;
     }
     .logo-final {
         height: 9.5vh;
@@ -235,10 +239,10 @@
         align-self: flex-end;
     }*/
     .nav {
-        height: 25vh;
+        height: 10vh;
     }
    .contact-us {
-       height: 25vh;
+       height: 10vh;
        width: 70vw;
    }
    .contact-us > a{
@@ -252,12 +256,15 @@
        word-break: keep-all;
    }
    .rotating-slider ul.direction-controls li.left-arrow {
-       top: 50%;
+       top: 35%;
        left: 0;
    }
    .rotating-slider ul.direction-controls li.right-arrow {
-    top: 50%;
+    top: 35%;
     left: 75vw;
+  }
+  .inner {
+      margin-top: -7vh;
   }
   #events {
       width: 100vw;
@@ -266,23 +273,24 @@
   .events-wrapper {
       flex-direction: column;
       justify-content: center;
+      height: 100vh;
   }
   #event-pic {
-      margin-left: 27.5vw;
-      margin-top: 5vh;
+      margin-right: -5vw;
+      margin-top: -20vh;
   }
   #event-name {
-      font-size: 3.5vh;
-      margin-top: -4vh;
+      font-size: 3.0vh;
+      margin-top: 5vh;
       width: 100%;
-      margin-left: 40vw;
+      margin-left: 30vw;
   }
   #event-desc {
-      margin-top: 1vh;
+      margin-top: 1.5vh;
       width: 100%;
-      line-height: 2.5vh;
+      line-height: 2.8vh;
       margin-right: 5vw;
-      font-size: 2.5vh;
+      font-size: 2.0vh;
       padding: 0 0 0 0;
   }
   #event-info {
@@ -340,7 +348,6 @@
         transform: translateX(-1vw);
     }
 }
-<<<<<<< HEAD
 
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -361,7 +368,7 @@
          margin-top: 0vh;
      }
      #event-pic {
-         margin-left: 30vw;
+         margin-left: 5vw;
      }
 }
 @media all and (min-width: 1451px) {
