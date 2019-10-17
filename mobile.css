@@ -119,6 +119,7 @@
 }
 .contact-us{
     margin-top: 4.3vh;
+    transform: translateX(-2.5vw);
 }
 #pic1, #pic2, #pic3, #pic4, #pic5{
     height: 30vw;
@@ -181,6 +182,17 @@
   }
 }
 @media screen and (max-width : 600px) {
+    #heading{
+        display: none;
+    }
+    .mobile{
+        font-size: 4.5vh;
+        font-family: Monoton;
+        color: #ff1177;
+        white-space: nowrap;
+        display: block;
+
+    }
     body {
         background-position-x: -70vw;
         overflow: hidden;
@@ -200,15 +212,15 @@
     }
     .logo-final {
         height: 9.5vh;
-        width: 35vw;
+        width: 40vw;
     }
-    #heading {
+    /*#heading {
         font-size: 4.5vh;
         width: 100%;
         margin-right: 5vw;
         right: 0;
         align-self: flex-end;
-    }
+    }*/
     .nav {
         height: 25vh;
     }
@@ -223,7 +235,7 @@
        font-family: 'Montserrat Alternates', sans-serif;
        text-align: center;
        white-space: nowrap;
-       margin-left: -9vw;
+       margin-left: 20vw;
        word-break: keep-all;
    }
    .rotating-slider ul.direction-controls li.left-arrow {

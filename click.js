@@ -11,6 +11,7 @@ function click_event(n){
         else if(window.innerWidth>600&&window.innerWidth<800){
             document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height : 30vw; width : 30vw; border-radius : 50%;">';
             document.getElementById('heading').style.display='none'
+            document.getElementById('heading-m').style.display='none'
             document.getElementById('logo').style.marginBottom='20vh'
             document.getElementById('contact-us').style.display='none'
             document.getElementById('nav').style.height='0px'
@@ -19,6 +20,7 @@ function click_event(n){
         else {
             document.getElementById('event-pic').innerHTML='<img src="neon'+q+'.jpg" style="height: 35vw; width : 35vw; border-radius : 50%;">';
             document.getElementById('heading').style.display='none'
+            document.getElementById('heading-m').style.display='none'
             document.getElementById('logo').style.marginBottom='20vh'
             document.getElementById('contact-us').style.display='none'
             document.getElementById('nav').style.height='0px'
@@ -45,6 +47,7 @@ function closeEvents()
         event_flag=true;
         console.log('event-closed');
         document.getElementById('heading').style.display=''
+        document.getElementById('heading-m').style.display=''
         document.getElementById('logo').style.marginBottom=''
         document.getElementById('contact-us').style.display=''
         document.getElementById('nav').style.height=''
@@ -60,6 +63,7 @@ function openContacts() {
         document.getElementById('events').style.opacity = '0';
         document.body.style.backdropFilter = 'blur(5px)';
         document.getElementById('heading').style.display='none'
+        document.getElementById('heading-m').style.display='none'
         document.getElementById('logo').style.display='none'
         document.getElementById('contact-us').style.display='none'
         document.getElementById('nav').style.height='0px'
@@ -72,6 +76,7 @@ function openContacts() {
         document.getElementById('events').style.opacity = '0';
         document.body.style.backdropFilter = 'blur(5px)';
         document.getElementById('heading').style.display='none'
+        document.getElementById('heading-m').style.display='none'
         document.getElementById('logo').style.display='none'
         document.getElementById('contact-us').style.display='none'
         document.getElementById('nav').style.height='0px'
@@ -89,7 +94,8 @@ function closeContacts()
     document.getElementById('contacts').style.zIndex = '0';  
     document.body.style.backdropFilter = 'blur(0px)';
     console.log('working');
-    document.getElementById('heading').style.display=''
+    document.getElementById('heading').style.display='';
+    document.getElementById('heading-m').style.display='';
     document.getElementById('logo').style.display=''
     document.getElementById('contact-us').style.display=''
     document.getElementById('nav').style.height='';
