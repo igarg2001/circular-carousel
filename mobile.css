@@ -107,6 +107,12 @@
     }
 
 }
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
 @media screen and (min-width: 700px){
   .logo-final {
     height: 14vh;
@@ -130,6 +136,13 @@
     overflow: auto;
   }
 }
+
+
+/*
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
 @media screen and (max-width : 600px) {
     body {
         background-position-x: -70vw;
@@ -220,7 +233,14 @@
       width: 100vw;
       margin-top: 0 auto;
   }
+
 }
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
 @media all and (max-width : 310px) {
     #heading {
         transform: translateY(5vh);
@@ -235,28 +255,34 @@
  }
  body {
     background-position-x: -100vw;
+    }
+    #event-pic {
+        margin-top: 10vh;
+        margin-left: 40vw;
+        margin-bottom: 0;
+        bottom: 0;
+    }
+    #event-info {
+        margin-top: -10vh;
+    }
+    #event-name {
+        margin-top: -2.55vh;
+        top: 0;
+    }
+    #event-desc {
+        margin-top: 1vh;
+        line-height: 3.5vh;
+    }
+    .contact-us {
+        transform: translateX(-1vw);
+    }
 }
-#event-pic {
-    margin-top: 10vh;
-    margin-left: 40vw;
-    margin-bottom: 0;
-    bottom: 0;
-}
-#event-info {
-    margin-top: -10vh;
-}
-#event-name {
-    margin-top: -2.55vh;
-    top: 0;
-}
-#event-desc {
-    margin-top: 1vh;
-    line-height: 3.5vh;
-}
-.contact-us {
-    transform: translateX(-1vw);
-}
-}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
 @media all and (min-width : 311px) and (max-width : 380px) {
     body {
         background-position-x: -90vw;
